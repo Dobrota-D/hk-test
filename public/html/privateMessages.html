@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/privateMessages.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitèr - Messages privés</title>
+</head>
+<body>
+
+    <!-- MENU -->
+    <div class="backMenu"></div>
+    <div class="menuContainer">
+        <ul>
+            <li class="menuMainLink">
+                <img src="../img/whiteHome.png" alt="Accueil">
+                <a href="main.html">Accueil</a>
+            </li>
+            <li class="menuExploreLink">
+                <img src="../img/whiteExplore.png" alt="Explorer">
+                <a href="explore.html">Explorer</a>
+            </li>
+            <li class="menuMsgLink active">
+                <img src="../img/blueMsg.png" alt="Messages">
+                <a href="privateMessages.html">Messages</a>
+            </li>
+            <li class="menuProfilLink">
+                <img src="../img/whiteUser.png" alt="Profil">
+                <a href="">Profil</a>
+            </li>
+            <li class="menuAboutUsLink">
+                <img src="../img/whiteAboutUs.png" alt="aboutUs">
+                <a href="aboutUs.html">À propos</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="privateMsgListContainer">
+        <div class="privateMsgListTitle">
+            <p>Messages privés</p>
+            <img src="../img/new_msg.png" class="newDiscussionImg"  onclick="document.querySelector('.searchUserContainer').style.display = 'flex'" alt="Nouvelle discussion">
+        </div>
+        <div class="privateMsgList">
+            <div class="emptyPrivateDiscussionMsg">
+                <p>Aucune discussion trouvée</p>
+                <a onclick="document.querySelector('.searchUserContainer').style.display = 'flex'">Commencer une discussion</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="discussionContainer">
+        <div class="discussionTitle">
+            <a href=""><p></p></a>
+        </div>
+
+        <div class="discussion">
+            <p class="emptyDiscussion">Aucune conversation sélectionnée</p>
+        </div>
+
+        <div class="discussionInputContainer">
+            <input type="text" placeholder="Écrire un message"> 
+            <button>Envoyer</button>
+        </div>
+    </div>
+
+    <div class="searchUserContainer">
+        <div class="searchUser">
+            <div class="searchUserInput">
+                <img src="../img/cross.png" alt="Fermer" onclick="document.querySelector('.searchUserContainer').style.display = 'none'">
+                <input type="text" placeholder="Rechercher un utilisateur">
+            </div>
+            <div class="userList">
+                <p class="emptyUserList">Aucun utilisateur trouvé</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/privateMsg/privateMsgList.js"></script>
+    <script src="../js/privateMsg/discussion.js"></script>
+    <script src="../js/privateMsg/newPrivateDiscussion.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

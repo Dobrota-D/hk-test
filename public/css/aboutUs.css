@@ -1,0 +1,152 @@
+/* body css on based */
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(21,32,43);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600; 
+}
+p{
+    font-family: 'poppins', sans-serif;
+}
+/* Menu CSS */
+.menuContainer {
+    width: 100%;
+    min-width: 250px;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #80808042;
+    z-index: +1;
+}
+.backMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+}
+.menuContainer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+}
+.menuContainer li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menuContainer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.menuContainer a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menuContainer .active a {
+    color: rgb(29, 161, 242);
+}
+/* Wave Animation */
+.backWave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+}
+section{
+    position:fixed;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    bottom: 0;
+}
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave.png);
+    background-size: 1500px 100px;
+}
+section .wave.wave1{
+    animation: animate 600s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2{
+    animation: animate2 700s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3{
+    animation: animate 900s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+section .wave.wave4{
+    animation: animate2 800s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -7s;
+    bottom: 20px;
+}
+@keyframes animate {
+    0%{
+        background-position: -16000% 0;
+    }
+    100%{
+        background-position: 20000% 0;
+    }
+}
+@keyframes animate2 {
+    0%{
+        background-position: 18000% 0;
+    }
+    100%{
+        background-position: -20000% 0;
+    }
+}
+/* All text to describe ourself in the about us */
+.aboutUsContainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.whoAreContainer, .techContainer, .whyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whoAreTextContainer, .techTextContainer, .whyTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   

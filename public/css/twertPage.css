@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(21,32,43);
+    color: white;
+    height: 100vh;
+    display: flex;
+}
+p {
+    margin: 0;
+}
+.backMenu {
+    width: 30% !important;
+}
+.menuContainer {
+    border-right: none !important;
+}
+
+.twertContainer {
+    width: 40%;
+    padding-top: 10vh;
+}
+/* TWERT */
+.twertCommentsContainer {
+    padding-bottom: 5vh;
+}
+.firstTwert {
+    box-shadow: 0px 0px 12px 1px rgb(9, 9, 10, .3);
+    border: 1px solid rgba(29, 161, 242, .1);
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+.twert {
+    width: 96%;
+    padding: 4% 2% 0 2%;
+}
+.twertUserAndBody {
+    display: flex;
+    flex-direction: row;
+}
+.twertInfoContainer {
+    width: 100%;
+}
+.twertInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.twertInfo .username{
+    margin-right: 20px;
+    font-weight: 500;
+}
+.twertInfo a {
+    color: white;
+    text-decoration: none;
+}
+.ppTwert{
+    width: 48px;
+    height: 48px;
+    outline-style: none;
+    background-color: rgba(21,32,43,1.00);
+    border-color: rgb(21, 32, 43);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 9999px;
+    overflow: hidden;
+    align-self: flex-end;
+}
+.ppTwert img {
+    width: 100%;
+    height: 100%;
+}
+.ppTwertContainer {
+    height: 100%;
+    margin-right: 12px;
+}
+.interactContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.diffTime {
+    font-size: 12px;
+    opacity: .3;
+    z-index: -1;
+}
+.body {
+    text-align: justify;
+    margin: 5px 0;
+}
+.favIcon, .rtIcon, .comentIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-size: 18.75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s;
+}
+.favIcon{
+    background-image: url(../img/like.png);
+}
+.rtIcon{
+    background-image: url(../img/retweet.png);
+}
+.comentIcon{
+    background-image: url(../img/coment.png);
+}
+.comentIcon:hover{
+    background-color: rgba(29, 161, 242, 0.1);
+    background-image: url(../img/comment-blue.png);
+}
+.rtIcon:hover{
+    background-color: rgba(23, 191, 99, 0.1);
+    background-image: url(../img/retweet-green.png);
+}
+.favIcon:hover{
+    background-color: rgba(224, 36, 94, 0.1);
+    background-image: url(../img/like-red.png);
+}
+.comentContainer, .rtContainer , .favContainer , .shareContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comentContainer p, .rtContainer p, .favContainer p, .shareContainer p{
+    font-size: 15px;
+    margin: 0;
+    margin-left: 15px;
+}
+.commentTwertContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0 15px 0;
+}
+.commentTwertContainer input {
+    width: -webkit-fill-available;
+    padding: 12px 20px;
+    background-color: #232e3a;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: white;
+}
+.commentTwertContainer .commentBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    margin-top: 10px;
+    border-radius: 100px; 
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    overflow: hidden;
+}
+.commentTwertContainer lottie-player {
+    height: 80px;
+}

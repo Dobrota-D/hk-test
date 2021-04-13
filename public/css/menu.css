@@ -1,0 +1,45 @@
+.menuContainer {
+    width: 20%;
+    min-width: 250px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #80808042;
+    z-index: +1;
+}
+.backMenu {
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuContainer ul {
+    padding-left: 0;
+}
+.menuContainer li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menuContainer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.menuContainer a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menuContainer .active a {
+    color: rgb(29, 161, 242);
+}

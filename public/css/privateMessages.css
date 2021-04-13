@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(21,32,43);
+    color: white;
+    height: 100vh;
+    display: flex;
+}
+p {
+    margin: 0;
+}
+
+/* DISCUSSION LIST */
+.privateMsgListContainer {
+    width: 23%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid #80808042;
+}
+.privateMsgListContainer .privateMsgListTitle, .discussionContainer .discussionTitle {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.privateMsgListContainer .privateMsgListTitle {
+    justify-content: space-between;
+    margin: 0 2% 0 4%;
+    width: 94%;
+}
+.privateMsgListContainer .newDiscussionImg {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 4%;
+}
+.privateMsgList {
+    height: 90vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.privateMsgList .privateMsg {
+    width: 92%;
+    padding: 3% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.privateMsgList .privateMsg::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 0px;
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    left: 0;
+    background-color: rgb(29, 161, 242);
+    transition: height .5s ease-out;
+}
+.privateMsgList .active::after {
+    height: 25px;
+}
+.privateMsgList .active .privateMsgUsername {
+    color: rgb(29, 161, 242);
+}
+.privateMsgList .privateMsg:hover {
+    background-color: rgb(27, 36, 48);
+}
+.privateMsgUsername {
+    white-space: nowrap;
+    overflow: auto;
+    margin-right: 5%;
+    font-size: 15px;
+}
+.privateMsgDate {
+    font-size: 12px;
+    opacity: .5;
+}
+.emptyPrivateDiscussionMsg {
+    display: none;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 12px;
+}
+.emptyPrivateDiscussionMsg p {
+    opacity: .5;
+}
+.emptyPrivateDiscussionMsg a {
+    color: rgb(29, 161, 242);
+    cursor: pointer;
+}
+.emptyPrivateDiscussionMsg a:hover {
+    text-decoration: underline;
+}
+
+/* DISCUSSION */
+.discussionContainer {
+    height: 100vh;
+    width: 57%;
+}
+.discussionContainer .discussionTitle {
+    justify-content: flex-start;
+    width: 95%;
+    padding-left: 5%;
+    font-size: 25px;
+}
+.discussionContainer .discussionTitle a {
+    color: white;
+    text-decoration: none;
+}
+.discussionContainer .discussion {
+    width: 96%;
+    height: 80%;
+    padding: 0 2%;
+    overflow: auto;
+}
+.discussion .emptyDiscussion {
+    display: block;
+    font-size: 13px;
+    opacity: .5;
+    text-align: center;
+    margin-top: 35vh;
+}
+.discussion .msgContainer {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    font-size: 15px;
+}
+.discussion .msgContainer p {
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.discussion .user {
+    color: white;
+    justify-content: flex-end;
+}
+.discussion .user p {
+    background-color: rgb(29, 161, 242);
+}
+.discussion .user p::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -5px;
+    top: 40%;
+    transform: rotate(45deg);
+    background-color: rgb(29, 161, 242);
+}
+.discussion .interlocutor {
+    color: black;
+    justify-content: flex-start;
+}
+.discussion .interlocutor p {
+    background-color: white;
+}
+.discussion .interlocutor p::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -5px;
+    top: 40%;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+/* INPUT */
+.discussionContainer .discussionInputContainer {
+    height: 10vh;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+.discussionInputContainer input, .searchUserInput input {
+    width: inherit;
+    padding: 15px 20px;
+    background-color: #232e3a;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: white;
+}
+.discussionInputContainer input::placeholder {
+    opacity: .3;
+    color: white;
+}
+.discussionInputContainer button {
+    outline: none;
+    padding: 11px 20px;
+    margin-left: 1%;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(29, 161, 242);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/* SEARCH USER SECTION */
+.searchUserContainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.searchUser {
+    width: 30%;
+    height: 70vh;
+    background-color: rgb(21,32,43);
+    border-radius: 10px;
+}
+.searchUserInput {
+    width: 90%;
+    padding: 0 5% 2vh 5%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.searchUserInput input {
+    width: 100%;
+    padding: 10px 20px;
+}
+.searchUserInput img {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 15px;
+    cursor: pointer;
+}
+.searchUser .userList {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.userList p {
+    width: 80%;
+    padding: 15px 10%;
+    cursor: pointer;
+}
+.userList p:hover {
+    background-color: rgb(27, 36, 48);
+}
+.emptyUserList {
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 13px;
+    opacity: .5;
+    display: none;
+}

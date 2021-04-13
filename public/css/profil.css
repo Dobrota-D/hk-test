@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(21,32,43);
+    color: white;
+    display: flex;
+    
+}
+main {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    transition-duration: 0.4s;
+}
+.profilInfoContainer {
+    height: 100%;
+    width: 50%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.profilHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 53px;
+    padding: 0 16px;
+}
+.usernameAndTwerts {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 41px;
+}
+.backArrow{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 56px;
+}
+.backArrow img {
+   width: 22.5px;
+   height: 22.5px;
+}
+.clickableCircleArrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 0px;
+}
+.clickableCircleArrow:hover{
+    background-color: rgba(29, 161, 242, 0.1);
+}
+.username {
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.twertsCounter{
+    line-height: 16px;
+    font-size: 13px;
+    color: rgb(136, 153, 166);
+    font-weight: 400;
+    margin-right: 20px;
+}
+.backgroundImage {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+.backgroundImage img {
+    width: inherit;
+}
+.detailsProfil {
+    padding: 12px 16px 0px 16px;
+    margin-bottom: 12px;
+}
+.profilImage {
+    width: 141.5px;
+    height: 141.5px;
+    margin: -101px -4px -4px 0;
+    outline-style: none;
+    background-color: #3D5466;
+    border-color: rgb(21, 32, 43);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 9999px;
+    overflow: hidden;
+    align-self: flex-end;
+}
+.profilImage img{
+    width: 100%;
+    height: 100%;
+}
+.firstLineWithButtons {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.profilMainBtn {
+    padding: 7px 25px;
+    border-radius: 9999px;
+    align-self: flex-start;
+    border-color: rgb(29, 161, 242);
+    color: rgb(29, 161, 242);
+}
+.profilMainBtn:hover{
+    background-color: rgba(29, 161, 242, 0.1);
+    color: rgb(29, 161, 242);
+}
+.profilFollowed {
+    background-color: rgb(29, 161, 242);
+    color: white;
+}
+.usernameUnderImage {
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    margin: 15px 0;
+}
+.descriptionProfil {
+    margin-bottom: 12px;
+}
+.description {
+    font-size: 15px;
+    color: white;
+}
+.twertsAndLikeTwerts{
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+}
+.twertsOfProfilBtn {
+    width: 50%;
+    height: 100%;
+    color: rgb(136, 153, 166);
+    font-weight: bold;
+    border-radius: 0;
+}
+.twertsOfProfilBtn:hover {
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.1);
+}
+.twertsLikeOfProfilBtn{
+    width: 50%;
+    height: 100%;
+    color: rgb(136, 153, 166);
+    font-weight: bold;
+    border-radius: 0;
+}
+.twertsLikeOfProfilBtn:hover{
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.1);
+}
+.emptyMsgAlert {
+    opacity: .5;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15vh;
+    display: none;
+}
+
+/* TWERT */
+.twertCard {
+    margin: 15px 0; 
+    box-shadow: 0px 0px 12px 1px rgb(9, 9, 10, .3);
+    border: 1px solid rgba(29, 161, 242, .1);
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    cursor: pointer;
+}
+.diffTime {
+    font-size: 12px;
+    opacity: .3;
+    z-index: -1;
+}
+.twertUserAndBody {
+    display: flex;
+    flex-direction: row;
+}
+.twertInfoContainer {
+    width: 100%;
+}
+.twertInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.twertInfo .username{
+    margin-right: 20px;
+}
+.twertInfo a {
+    text-decoration: none;
+}
+.ppTwert{
+    width: 48px;
+    height: 48px;
+    outline-style: none;
+    background-color: rgba(21,32,43,1.00);
+    border-color: rgb(21, 32, 43);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 9999px;
+    overflow: hidden;
+    align-self: flex-end;
+}
+.twertContent .body {
+    text-align: justify;
+}
+.ppTwert img {
+    width: 100%;
+    height: 100%;
+}
+.ppTwertContainer {
+    height: 100%;
+    margin-right: 12px;
+}
+.interactContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.favIcon, .rtIcon, .comentIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-size: 18.75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.favIcon{
+    background-image: url(../img/like.png);
+}
+.rtIcon{
+    background-image: url(../img/retweet.png);
+}
+.comentIcon{
+    background-image: url(../img/coment.png);
+}
+.comentIcon:hover{
+    background-color: rgba(29, 161, 242, 0.1);
+    background-image: url(../img/comment-blue.png);
+}
+.rtIcon:hover{
+    background-color: rgba(23, 191, 99, 0.1);
+    background-image: url(../img/retweet-green.png);
+}
+.favIcon:hover{
+    background-color: rgba(224, 36, 94, 0.1);
+    background-image: url(../img/like-red.png);
+}
+
+.comentContainer, .rtContainer , .favContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.comentIcon:active, .rtIcon:active , .favIcon:active{
+    transform: scale(1.2);
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.comentContainer p, .rtContainer p, .favContainer p, .shareContainer p{
+    font-size: 15px;
+    margin: 0;
+    margin-left: 15px;
+}
+.commentTwertContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0 20px 0;
+}
+.commentTwertContainer input {
+    width: -webkit-fill-available;
+    padding: 10px 20px;
+    background-color: #232e3a;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+}
+.commentTwertContainer .commentBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    margin-top: 10px;
+    border-radius: 100px; 
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    overflow: hidden;
+}
+.commentTwertContainer .commentBtnContainer p {
+    margin: 0;
+}
+.commentTwertContainer lottie-player {
+    height: 80px;
+}
+
+/* EDIT PROFIL FORM */
+.editProfilForm {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(21, 32, 43, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.editProfilForm form {
+    position: relative;
+    width: 40%;
+    padding: 3% 3% 2% 3%;
+    border-radius: 15px;
+    background-color: rgb(21, 32, 43);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 12px 1px rgb(9, 9, 10, .3);
+    border: 1px solid rgba(29, 161, 242, .1);
+}
+.editProfilForm .formGroup {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(29, 161, 242);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.editProfilForm .formGroup label {
+    position: absolute;
+    top: -11px;
+    left: 10px;
+    padding: 0 5px;
+    width: fit-content;
+    font-size: 14px;
+    color: rgb(29, 161, 242);
+    background-color: rgb(21, 32, 43);
+}
+.editProfilForm .formGroup input {
+    margin-top: 5px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+.editProfilForm form img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.editProfilForm button {
+    outline: none;
+    border: none;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    padding: 8px 25px;
+    margin-top: 10px;
+    border-radius: 100px; 
+    width: fit-content;
+    align-self: flex-end;
+}
+.wrongProfilImgLinkMsg, .wrongBackgroundProfilImgLinkMsg {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+    margin: -10px 0 0 5px;
+    display: none;
+}

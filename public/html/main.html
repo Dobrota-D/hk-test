@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Twitèr - Accueil</title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <div class="backMenu"></div>
+    <div class="menuContainer">
+        <ul>
+            <li class="menuMainLink active">
+                <img src="../img/blueHome.png" alt="Accueil">
+                <a href="main.html">Accueil</a>
+            </li>
+            <li class="menuExploreLink">
+                <img src="../img/whiteExplore.png" alt="Explorer">
+                <a href="explore.html">Explorer</a>
+            </li>
+            <li class="menuMsgLink">
+                <img src="../img/whiteMsg.png" alt="Messages">
+                <a href="privateMessages.html">Messages</a>
+            </li>
+            <li class="menuProfilLink">
+                <img src="../img/whiteUser.png" alt="Profil">
+                <a href="">Profil</a>
+            </li>
+            <li class="menuAboutUsLink">
+                <img src="../img/whiteAboutUs.png" alt="aboutUs">
+                <a href="aboutUs.html">À propos</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="homeContainer">
+        <div class="createNewTwertContainer">
+            <div class="profilImgContainer">
+                <a href=""><img src="" class="profilImg" alt="Profil"></a>
+            </div>
+            <div class="createNewTwertInputContainer">
+                <textarea id="msgArea" placeholder="Quoi de neuf ?" maxlength="255"></textarea>
+                <div class="twertActionContainer">
+                    <span>0/255</span>
+                    <button type="button" class="validMsgBtn" onclick="validTextArea()">Twèrter</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="twertListContainer">
+
+        </div>
+    </div>
+
+        
+    <script src="../js/twertFunctions.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(21,32,43);
+    color: white;
+    height: 100vh;
+    display: flex;
+    padding-top: 7vh;
+}
+p {
+    margin: 0;
+}
+.menuContainer {
+    border-right: none !important;
+}
+
+/* INPUT */
+.exploreInputContainer {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(21,32,43);
+}
+.exploreInputContainer input {
+    width: 50%;
+    padding: 12px 20px;
+    background-color: #232e3a;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    z-index: +2;
+}
+/* TWERT LIST */
+.twertListContainer {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+.twertCard {
+    width: 60%;
+    margin: 9px 0; 
+    box-shadow: 0px 0px 12px 1px rgb(9, 9, 10, .3);
+    border: 1px solid rgba(29, 161, 242, .1);
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    cursor: pointer;
+}
+.twertUserAndBody {
+    display: flex;
+    flex-direction: row;
+}
+.twertInfoContainer {
+    width: 100%;
+}
+.twertInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.twertInfo .username{
+    margin-right: 20px;
+    font-weight: 500;
+}
+.twertInfo a {
+    color: white;
+    text-decoration: none;
+}
+.ppTwert{
+    width: 48px;
+    height: 48px;
+    outline-style: none;
+    background-color: rgba(21,32,43,1.00);
+    border-color: rgb(21, 32, 43);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 9999px;
+    overflow: hidden;
+    align-self: flex-end;
+}
+.ppTwert img {
+    width: 100%;
+    height: 100%;
+}
+.ppTwertContainer {
+    height: 100%;
+    margin-right: 12px;
+}
+.interactContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.diffTime {
+    font-size: 12px;
+    opacity: .3;
+    z-index: -1;
+}
+.body {
+    text-align: justify;
+    margin: 5px 0;
+}
+.favIcon, .rtIcon, .comentIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background-size: 18.75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s;
+}
+.favIcon{
+    background-image: url(../img/like.png);
+}
+.rtIcon{
+    background-image: url(../img/retweet.png);
+}
+.comentIcon{
+    background-image: url(../img/coment.png);
+}
+.comentIcon:hover{
+    background-color: rgba(29, 161, 242, 0.1);
+    background-image: url(../img/comment-blue.png);
+}
+.rtIcon:hover{
+    background-color: rgba(23, 191, 99, 0.1);
+    background-image: url(../img/retweet-green.png);
+}
+.favIcon:hover{
+    background-color: rgba(224, 36, 94, 0.1);
+    background-image: url(../img/like-red.png);
+}
+.comentContainer, .rtContainer , .favContainer , .shareContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comentContainer p, .rtContainer p, .favContainer p, .shareContainer p{
+    font-size: 15px;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.emptyTwertMsg {
+    display: none;
+    font-size: 13px;
+    opacity: .5;
+    margin-top: 40vh;
+}
+.emptyTwertMsg span {
+    color: rgb(29, 161, 242);
+}
+.commentTwertContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0 20px 0;
+}
+.commentTwertContainer input {
+    width: -webkit-fill-available;
+    padding: 12px 20px;
+    background-color: #232e3a;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: white;
+}
+.commentTwertContainer .commentBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    margin-top: 10px;
+    border-radius: 100px; 
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    overflow: hidden;
+}
+.commentTwertContainer lottie-player {
+    height: 80px;
+}
+
+/* TRENDS */
+.exploreTrendsContainer {
+    width: 20%;
+    min-width: 200px;
+}
+.exploreTrends {
+    width: 20%;
+    min-width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.exploreTrends ul {
+    padding-left: 0;
+    width: 100%;
+}
+.exploreTitleContainer {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+}
+.exploreTitleContainer .exploreTrendTitle {
+    font-size: 22px;
+    color: rgb(29, 161, 242);
+    font-weight: bold;
+}
+.exploreTitleContainer img {
+    width: 22px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+.exploreTrends li {
+    width: 100%;
+    list-style: none;
+    padding: 12px 0;
+    padding-left: 25%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+.exploreTrends li:hover {
+    background-color: rgb(27, 36, 48);
+}
+.exploreTrends .trendBody {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 17px;
+}
+.exploreTrends .trendTotalTwert {
+    opacity: .5;
+    font-size: 12px;
+}
