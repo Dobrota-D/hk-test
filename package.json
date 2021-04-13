@@ -19,11 +19,14 @@
   "homepage": "https://github.com/coding-factory-classrooms/Twitt-r#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.6",
+    "env": "^0.0.2",
     "express": "^4.17.1",
     "figlet": "^1.5.0",
     "jquerry": "^0.0.1-security",
     "mongoose": "^5.12.3",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
   },
   "engines": {
     "node": ">=10.0.0"
