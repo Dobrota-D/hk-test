@@ -1,0 +1,31 @@
+{
+  "name": "twitt-r",
+  "version": "1.0.0",
+  "description": "projet-web-2021-twitter created by GitHub Classroom",
+  "main": "index.js",
+  "scripts": {
+    "start": "node private/server.js",
+    "dev": "nodemon private/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-factory-classrooms/Twitt-r.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-factory-classrooms/Twitt-r/issues"
+  },
+  "homepage": "https://github.com/coding-factory-classrooms/Twitt-r#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "jquerry": "^0.0.1-security",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
